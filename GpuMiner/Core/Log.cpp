@@ -16,6 +16,8 @@ using std::type_info;
 #endif
 #ifdef __APPLE__
 #include <pthread.h>
+#include <typeinfo>
+using std::type_info;
 #endif
 #include "Guards.h"
 

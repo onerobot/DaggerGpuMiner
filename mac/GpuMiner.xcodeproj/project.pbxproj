@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AEBA2EF20DF3DFB0030E7C9 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEBA2EE20DF3DFB0030E7C9 /* OpenCL.framework */; };
+		8AEBA33820DF3F3B0030E7C9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2F020DF3F3B0030E7C9 /* main.cpp */; };
+		8AEBA33920DF3F3B0030E7C9 /* sha256_mod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2F320DF3F3B0030E7C9 /* sha256_mod.cpp */; };
+		8AEBA33A20DF3F3B0030E7C9 /* sha256.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2F420DF3F3B0030E7C9 /* sha256.cpp */; };
+		8AEBA33B20DF3F3B0030E7C9 /* XCpuMiner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2F720DF3F3B0030E7C9 /* XCpuMiner.cpp */; };
+		8AEBA33C20DF3F3B0030E7C9 /* CLMiner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2F920DF3F3B0030E7C9 /* CLMiner.cpp */; };
+		8AEBA33D20DF3F3B0030E7C9 /* PathUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA2FE20DF3F3B0030E7C9 /* PathUtils.cpp */; };
+		8AEBA33E20DF3F3B0030E7C9 /* CpuInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA30020DF3F3B0030E7C9 /* CpuInfo.cpp */; };
+		8AEBA33F20DF3F3B0030E7C9 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA30320DF3F3B0030E7C9 /* Utils.cpp */; };
+		8AEBA34020DF3F3B0030E7C9 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA30420DF3F3B0030E7C9 /* Random.cpp */; };
+		8AEBA34120DF3F3B0030E7C9 /* XNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA30820DF3F3B0030E7C9 /* XNetwork.cpp */; };
+		8AEBA34220DF3F3B0030E7C9 /* crc_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA30C20DF3F3B0030E7C9 /* crc_c.cpp */; };
+		8AEBA34420DF3F3B0030E7C9 /* dfslib_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA31620DF3F3B0030E7C9 /* dfslib_string.cpp */; };
+		8AEBA34520DF3F3B0030E7C9 /* dfslib_crypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA31920DF3F3B0030E7C9 /* dfslib_crypt.cpp */; };
+		8AEBA34620DF3F3B0030E7C9 /* XAddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA31C20DF3F3B0030E7C9 /* XAddress.cpp */; };
+		8AEBA34720DF3F3B0030E7C9 /* XBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA31D20DF3F3B0030E7C9 /* XBlock.cpp */; };
+		8AEBA34820DF3F3B0030E7C9 /* XTaskWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32220DF3F3B0030E7C9 /* XTaskWrapper.cpp */; };
+		8AEBA34920DF3F3B0030E7C9 /* XPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32320DF3F3B0030E7C9 /* XPool.cpp */; };
+		8AEBA34A20DF3F3B0030E7C9 /* XHash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32420DF3F3B0030E7C9 /* XHash.cpp */; };
+		8AEBA34B20DF3F3B0030E7C9 /* XTaskProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32620DF3F3B0030E7C9 /* XTaskProcessor.cpp */; };
+		8AEBA34C20DF3F3B0030E7C9 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32820DF3F3B0030E7C9 /* Log.cpp */; };
+		8AEBA34D20DF3F3B0030E7C9 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32A20DF3F3B0030E7C9 /* Worker.cpp */; };
+		8AEBA34E20DF3F3B0030E7C9 /* MinerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA32C20DF3F3B0030E7C9 /* MinerManager.cpp */; };
+		8AEBA34F20DF3F3B0030E7C9 /* CommonData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA33220DF3F3B0030E7C9 /* CommonData.cpp */; };
+		8AEBA35020DF3F3B0030E7C9 /* Farm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA33520DF3F3B0030E7C9 /* Farm.cpp */; };
+		8AEBA35120DF3F3B0030E7C9 /* Miner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AEBA33720DF3F3B0030E7C9 /* Miner.cpp */; };
+		8AEBA35520E076EB0030E7C9 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEBA35420E076EB0030E7C9 /* libboost_system.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AEBA27C20DF39B70030E7C9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8AEBA27E20DF39B70030E7C9 /* GpuMiner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GpuMiner; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AEBA2EE20DF3DFB0030E7C9 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		8AEBA2F020DF3F3B0030E7C9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../GpuMiner/main.cpp; sourceTree = "<group>"; };
+		8AEBA2F220DF3F3B0030E7C9 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		8AEBA2F320DF3F3B0030E7C9 /* sha256_mod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha256_mod.cpp; sourceTree = "<group>"; };
+		8AEBA2F420DF3F3B0030E7C9 /* sha256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha256.cpp; sourceTree = "<group>"; };
+		8AEBA2F520DF3F3B0030E7C9 /* sha256_mod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256_mod.h; sourceTree = "<group>"; };
+		8AEBA2F720DF3F3B0030E7C9 /* XCpuMiner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XCpuMiner.cpp; sourceTree = "<group>"; };
+		8AEBA2F820DF3F3B0030E7C9 /* CLMiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMiner.h; sourceTree = "<group>"; };
+		8AEBA2F920DF3F3B0030E7C9 /* CLMiner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLMiner.cpp; sourceTree = "<group>"; };
+		8AEBA2FB20DF3F3B0030E7C9 /* cl2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl2.hpp; sourceTree = "<group>"; };
+		8AEBA2FC20DF3F3B0030E7C9 /* XCpuMiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCpuMiner.h; sourceTree = "<group>"; };
+		8AEBA2FE20DF3F3B0030E7C9 /* PathUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathUtils.cpp; sourceTree = "<group>"; };
+		8AEBA2FF20DF3F3B0030E7C9 /* PathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathUtils.h; sourceTree = "<group>"; };
+		8AEBA30020DF3F3B0030E7C9 /* CpuInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuInfo.cpp; sourceTree = "<group>"; };
+		8AEBA30120DF3F3B0030E7C9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		8AEBA30220DF3F3B0030E7C9 /* StringFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringFormat.h; sourceTree = "<group>"; };
+		8AEBA30320DF3F3B0030E7C9 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		8AEBA30420DF3F3B0030E7C9 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
+		8AEBA30520DF3F3B0030E7C9 /* CpuInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuInfo.h; sourceTree = "<group>"; };
+		8AEBA30620DF3F3B0030E7C9 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		8AEBA30820DF3F3B0030E7C9 /* XNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XNetwork.cpp; sourceTree = "<group>"; };
+		8AEBA30920DF3F3B0030E7C9 /* XHash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XHash.hpp; sourceTree = "<group>"; };
+		8AEBA30B20DF3F3B0030E7C9 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		8AEBA30C20DF3F3B0030E7C9 /* crc_c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crc_c.cpp; sourceTree = "<group>"; };
+		8AEBA30D20DF3F3B0030E7C9 /* XNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNetwork.h; sourceTree = "<group>"; };
+		8AEBA31420DF3F3B0030E7C9 /* XHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHash.h; sourceTree = "<group>"; };
+		8AEBA31620DF3F3B0030E7C9 /* dfslib_string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dfslib_string.cpp; sourceTree = "<group>"; };
+		8AEBA31720DF3F3B0030E7C9 /* dfslib_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfslib_string.h; sourceTree = "<group>"; };
+		8AEBA31820DF3F3B0030E7C9 /* dfslib_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfslib_crypt.h; sourceTree = "<group>"; };
+		8AEBA31920DF3F3B0030E7C9 /* dfslib_crypt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dfslib_crypt.cpp; sourceTree = "<group>"; };
+		8AEBA31A20DF3F3B0030E7C9 /* dfslib_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dfslib_types.h; sourceTree = "<group>"; };
+		8AEBA31B20DF3F3B0030E7C9 /* XPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPool.h; sourceTree = "<group>"; };
+		8AEBA31C20DF3F3B0030E7C9 /* XAddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XAddress.cpp; sourceTree = "<group>"; };
+		8AEBA31D20DF3F3B0030E7C9 /* XBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XBlock.cpp; sourceTree = "<group>"; };
+		8AEBA31E20DF3F3B0030E7C9 /* XAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAddress.h; sourceTree = "<group>"; };
+		8AEBA31F20DF3F3B0030E7C9 /* XTaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTaskWrapper.h; sourceTree = "<group>"; };
+		8AEBA32020DF3F3B0030E7C9 /* XTaskProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTaskProcessor.h; sourceTree = "<group>"; };
+		8AEBA32120DF3F3B0030E7C9 /* XTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTime.h; sourceTree = "<group>"; };
+		8AEBA32220DF3F3B0030E7C9 /* XTaskWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XTaskWrapper.cpp; sourceTree = "<group>"; };
+		8AEBA32320DF3F3B0030E7C9 /* XPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPool.cpp; sourceTree = "<group>"; };
+		8AEBA32420DF3F3B0030E7C9 /* XHash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XHash.cpp; sourceTree = "<group>"; };
+		8AEBA32520DF3F3B0030E7C9 /* XBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBlock.h; sourceTree = "<group>"; };
+		8AEBA32620DF3F3B0030E7C9 /* XTaskProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XTaskProcessor.cpp; sourceTree = "<group>"; };
+		8AEBA32820DF3F3B0030E7C9 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		8AEBA32920DF3F3B0030E7C9 /* CommonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonData.h; sourceTree = "<group>"; };
+		8AEBA32A20DF3F3B0030E7C9 /* Worker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Worker.cpp; sourceTree = "<group>"; };
+		8AEBA32B20DF3F3B0030E7C9 /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
+		8AEBA32C20DF3F3B0030E7C9 /* MinerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinerManager.cpp; sourceTree = "<group>"; };
+		8AEBA32D20DF3F3B0030E7C9 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		8AEBA32E20DF3F3B0030E7C9 /* Miner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miner.h; sourceTree = "<group>"; };
+		8AEBA32F20DF3F3B0030E7C9 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		8AEBA33020DF3F3B0030E7C9 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		8AEBA33120DF3F3B0030E7C9 /* MinerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinerManager.h; sourceTree = "<group>"; };
+		8AEBA33220DF3F3B0030E7C9 /* CommonData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommonData.cpp; sourceTree = "<group>"; };
+		8AEBA33320DF3F3B0030E7C9 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
+		8AEBA33420DF3F3B0030E7C9 /* Farm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Farm.h; sourceTree = "<group>"; };
+		8AEBA33520DF3F3B0030E7C9 /* Farm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Farm.cpp; sourceTree = "<group>"; };
+		8AEBA33620DF3F3B0030E7C9 /* Guards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guards.h; sourceTree = "<group>"; };
+		8AEBA33720DF3F3B0030E7C9 /* Miner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Miner.cpp; sourceTree = "<group>"; };
+		8AEBA35420E076EB0030E7C9 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_system.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AEBA27B20DF39B70030E7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEBA2EF20DF3DFB0030E7C9 /* OpenCL.framework in Frameworks */,
+				8AEBA35520E076EB0030E7C9 /* libboost_system.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AEBA27520DF39B70030E7C9 = {
+			isa = PBXGroup;
+			children = (
+				8AEBA28020DF39B70030E7C9 /* GpuMiner */,
+				8AEBA27F20DF39B70030E7C9 /* Products */,
+				8AEBA2ED20DF3DFB0030E7C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8AEBA27F20DF39B70030E7C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA27E20DF39B70030E7C9 /* GpuMiner */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AEBA28020DF39B70030E7C9 /* GpuMiner */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA2F020DF3F3B0030E7C9 /* main.cpp */,
+				8AEBA32720DF3F3B0030E7C9 /* Core */,
+				8AEBA2F120DF3F3B0030E7C9 /* Hash */,
+				8AEBA2F620DF3F3B0030E7C9 /* MinerEngine */,
+				8AEBA2FD20DF3F3B0030E7C9 /* Utils */,
+				8AEBA30720DF3F3B0030E7C9 /* XDagCore */,
+			);
+			path = GpuMiner;
+			sourceTree = "<group>";
+		};
+		8AEBA2ED20DF3DFB0030E7C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA35420E076EB0030E7C9 /* libboost_system.a */,
+				8AEBA2EE20DF3DFB0030E7C9 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AEBA2F120DF3F3B0030E7C9 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA2F220DF3F3B0030E7C9 /* sha256.h */,
+				8AEBA2F320DF3F3B0030E7C9 /* sha256_mod.cpp */,
+				8AEBA2F420DF3F3B0030E7C9 /* sha256.cpp */,
+				8AEBA2F520DF3F3B0030E7C9 /* sha256_mod.h */,
+			);
+			name = Hash;
+			path = ../../GpuMiner/Hash;
+			sourceTree = "<group>";
+		};
+		8AEBA2F620DF3F3B0030E7C9 /* MinerEngine */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA2F720DF3F3B0030E7C9 /* XCpuMiner.cpp */,
+				8AEBA2F820DF3F3B0030E7C9 /* CLMiner.h */,
+				8AEBA2F920DF3F3B0030E7C9 /* CLMiner.cpp */,
+				8AEBA2FA20DF3F3B0030E7C9 /* CL */,
+				8AEBA2FC20DF3F3B0030E7C9 /* XCpuMiner.h */,
+			);
+			name = MinerEngine;
+			path = ../../GpuMiner/MinerEngine;
+			sourceTree = "<group>";
+		};
+		8AEBA2FA20DF3F3B0030E7C9 /* CL */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA2FB20DF3F3B0030E7C9 /* cl2.hpp */,
+			);
+			path = CL;
+			sourceTree = "<group>";
+		};
+		8AEBA2FD20DF3F3B0030E7C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA2FE20DF3F3B0030E7C9 /* PathUtils.cpp */,
+				8AEBA2FF20DF3F3B0030E7C9 /* PathUtils.h */,
+				8AEBA30020DF3F3B0030E7C9 /* CpuInfo.cpp */,
+				8AEBA30120DF3F3B0030E7C9 /* Utils.h */,
+				8AEBA30220DF3F3B0030E7C9 /* StringFormat.h */,
+				8AEBA30320DF3F3B0030E7C9 /* Utils.cpp */,
+				8AEBA30420DF3F3B0030E7C9 /* Random.cpp */,
+				8AEBA30520DF3F3B0030E7C9 /* CpuInfo.h */,
+				8AEBA30620DF3F3B0030E7C9 /* Random.h */,
+			);
+			name = Utils;
+			path = ../../GpuMiner/Utils;
+			sourceTree = "<group>";
+		};
+		8AEBA30720DF3F3B0030E7C9 /* XDagCore */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA30A20DF3F3B0030E7C9 /* dar */,
+				8AEBA31520DF3F3B0030E7C9 /* dfstools */,
+				8AEBA30820DF3F3B0030E7C9 /* XNetwork.cpp */,
+				8AEBA30920DF3F3B0030E7C9 /* XHash.hpp */,
+				8AEBA30D20DF3F3B0030E7C9 /* XNetwork.h */,
+				8AEBA31420DF3F3B0030E7C9 /* XHash.h */,
+				8AEBA31B20DF3F3B0030E7C9 /* XPool.h */,
+				8AEBA31C20DF3F3B0030E7C9 /* XAddress.cpp */,
+				8AEBA31D20DF3F3B0030E7C9 /* XBlock.cpp */,
+				8AEBA31E20DF3F3B0030E7C9 /* XAddress.h */,
+				8AEBA31F20DF3F3B0030E7C9 /* XTaskWrapper.h */,
+				8AEBA32020DF3F3B0030E7C9 /* XTaskProcessor.h */,
+				8AEBA32120DF3F3B0030E7C9 /* XTime.h */,
+				8AEBA32220DF3F3B0030E7C9 /* XTaskWrapper.cpp */,
+				8AEBA32320DF3F3B0030E7C9 /* XPool.cpp */,
+				8AEBA32420DF3F3B0030E7C9 /* XHash.cpp */,
+				8AEBA32520DF3F3B0030E7C9 /* XBlock.h */,
+				8AEBA32620DF3F3B0030E7C9 /* XTaskProcessor.cpp */,
+			);
+			name = XDagCore;
+			path = ../../GpuMiner/XDagCore;
+			sourceTree = "<group>";
+		};
+		8AEBA30A20DF3F3B0030E7C9 /* dar */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA30B20DF3F3B0030E7C9 /* crc.h */,
+				8AEBA30C20DF3F3B0030E7C9 /* crc_c.cpp */,
+			);
+			path = dar;
+			sourceTree = "<group>";
+		};
+		8AEBA31520DF3F3B0030E7C9 /* dfstools */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA31620DF3F3B0030E7C9 /* dfslib_string.cpp */,
+				8AEBA31720DF3F3B0030E7C9 /* dfslib_string.h */,
+				8AEBA31820DF3F3B0030E7C9 /* dfslib_crypt.h */,
+				8AEBA31920DF3F3B0030E7C9 /* dfslib_crypt.cpp */,
+				8AEBA31A20DF3F3B0030E7C9 /* dfslib_types.h */,
+			);
+			path = dfstools;
+			sourceTree = "<group>";
+		};
+		8AEBA32720DF3F3B0030E7C9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8AEBA32820DF3F3B0030E7C9 /* Log.cpp */,
+				8AEBA32920DF3F3B0030E7C9 /* CommonData.h */,
+				8AEBA32A20DF3F3B0030E7C9 /* Worker.cpp */,
+				8AEBA32B20DF3F3B0030E7C9 /* Exceptions.h */,
+				8AEBA32C20DF3F3B0030E7C9 /* MinerManager.cpp */,
+				8AEBA32D20DF3F3B0030E7C9 /* Worker.h */,
+				8AEBA32E20DF3F3B0030E7C9 /* Miner.h */,
+				8AEBA32F20DF3F3B0030E7C9 /* Common.h */,
+				8AEBA33020DF3F3B0030E7C9 /* Log.h */,
+				8AEBA33120DF3F3B0030E7C9 /* MinerManager.h */,
+				8AEBA33220DF3F3B0030E7C9 /* CommonData.cpp */,
+				8AEBA33320DF3F3B0030E7C9 /* Terminal.h */,
+				8AEBA33420DF3F3B0030E7C9 /* Farm.h */,
+				8AEBA33520DF3F3B0030E7C9 /* Farm.cpp */,
+				8AEBA33620DF3F3B0030E7C9 /* Guards.h */,
+				8AEBA33720DF3F3B0030E7C9 /* Miner.cpp */,
+			);
+			name = Core;
+			path = ../../GpuMiner/Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AEBA27D20DF39B70030E7C9 /* GpuMiner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AEBA28520DF39B70030E7C9 /* Build configuration list for PBXNativeTarget "GpuMiner" */;
+			buildPhases = (
+				8AEBA27A20DF39B70030E7C9 /* Sources */,
+				8AEBA27B20DF39B70030E7C9 /* Frameworks */,
+				8AEBA27C20DF39B70030E7C9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GpuMiner;
+			productName = GpuMiner;
+			productReference = 8AEBA27E20DF39B70030E7C9 /* GpuMiner */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AEBA27620DF39B70030E7C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = hot;
+				TargetAttributes = {
+					8AEBA27D20DF39B70030E7C9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8AEBA27920DF39B70030E7C9 /* Build configuration list for PBXProject "GpuMiner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8AEBA27520DF39B70030E7C9;
+			productRefGroup = 8AEBA27F20DF39B70030E7C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AEBA27D20DF39B70030E7C9 /* GpuMiner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AEBA27A20DF39B70030E7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEBA33E20DF3F3B0030E7C9 /* CpuInfo.cpp in Sources */,
+				8AEBA34120DF3F3B0030E7C9 /* XNetwork.cpp in Sources */,
+				8AEBA33820DF3F3B0030E7C9 /* main.cpp in Sources */,
+				8AEBA34D20DF3F3B0030E7C9 /* Worker.cpp in Sources */,
+				8AEBA34420DF3F3B0030E7C9 /* dfslib_string.cpp in Sources */,
+				8AEBA33B20DF3F3B0030E7C9 /* XCpuMiner.cpp in Sources */,
+				8AEBA34E20DF3F3B0030E7C9 /* MinerManager.cpp in Sources */,
+				8AEBA35120DF3F3B0030E7C9 /* Miner.cpp in Sources */,
+				8AEBA34020DF3F3B0030E7C9 /* Random.cpp in Sources */,
+				8AEBA34520DF3F3B0030E7C9 /* dfslib_crypt.cpp in Sources */,
+				8AEBA35020DF3F3B0030E7C9 /* Farm.cpp in Sources */,
+				8AEBA33F20DF3F3B0030E7C9 /* Utils.cpp in Sources */,
+				8AEBA33D20DF3F3B0030E7C9 /* PathUtils.cpp in Sources */,
+				8AEBA33C20DF3F3B0030E7C9 /* CLMiner.cpp in Sources */,
+				8AEBA34620DF3F3B0030E7C9 /* XAddress.cpp in Sources */,
+				8AEBA33A20DF3F3B0030E7C9 /* sha256.cpp in Sources */,
+				8AEBA34220DF3F3B0030E7C9 /* crc_c.cpp in Sources */,
+				8AEBA34720DF3F3B0030E7C9 /* XBlock.cpp in Sources */,
+				8AEBA34820DF3F3B0030E7C9 /* XTaskWrapper.cpp in Sources */,
+				8AEBA34F20DF3F3B0030E7C9 /* CommonData.cpp in Sources */,
+				8AEBA34920DF3F3B0030E7C9 /* XPool.cpp in Sources */,
+				8AEBA33920DF3F3B0030E7C9 /* sha256_mod.cpp in Sources */,
+				8AEBA34C20DF3F3B0030E7C9 /* Log.cpp in Sources */,
+				8AEBA34B20DF3F3B0030E7C9 /* XTaskProcessor.cpp in Sources */,
+				8AEBA34A20DF3F3B0030E7C9 /* XHash.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8AEBA28320DF39B70030E7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8AEBA28420DF39B70030E7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8AEBA28620DF39B70030E7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../GpuMiner";
+			};
+			name = Debug;
+		};
+		8AEBA28720DF39B70030E7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../GpuMiner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AEBA27920DF39B70030E7C9 /* Build configuration list for PBXProject "GpuMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AEBA28320DF39B70030E7C9 /* Debug */,
+				8AEBA28420DF39B70030E7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AEBA28520DF39B70030E7C9 /* Build configuration list for PBXNativeTarget "GpuMiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AEBA28620DF39B70030E7C9 /* Debug */,
+				8AEBA28720DF39B70030E7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AEBA27620DF39B70030E7C9 /* Project object */;
+}

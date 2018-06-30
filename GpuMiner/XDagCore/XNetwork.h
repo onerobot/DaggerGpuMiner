@@ -4,6 +4,10 @@
 #include "netinet/in.h"
 #include "sys/socket.h"
 typedef int SOCKET;
+#elif __APPLE__
+#include "netinet/in.h"
+#include "sys/socket.h"
+typedef int SOCKET;
 #elif _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
